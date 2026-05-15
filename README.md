@@ -33,6 +33,7 @@ This document serves as both:
 - [Deployment](#deployment)
 - [Roadmap](#roadmap)
 - [Screenshots / media placeholders](#screenshots--media-placeholders)
+- [Hugging Face Agents](#hugging-face-agents)
 - [License](#license)
 
 ---
@@ -323,6 +324,37 @@ Runtime flow:
 
 ---
 
+
+## Hugging Face CLI Integration
+
+The [Hugging Face CLI](https://huggingface.co/docs/huggingface_hub/guides/cli) lets you search models, manage datasets, launch Spaces, and run jobs from any coding agent.
+
+### Install the CLI
+
+Follow the [official installation guide](https://huggingface.co/docs/huggingface_hub/guides/cli#getting-started) to install and update the `hf` CLI.
+
+### Add the CLI Skill for Agents
+
+- **Global install (recommended):**
+  ```bash
+  hf skills add --global
+  ```
+- **Project-local install:**
+  ```bash
+  hf skills add
+  ```
+- For Claude Code, add `--claude` as needed.
+
+> The Skill is generated from your locally installed CLI version, so it's always up to date.
+
+### Resources
+
+- [CLI Reference](https://huggingface.co/docs/huggingface_hub/guides/cli)
+- [Token Settings](https://huggingface.co/settings/tokens)
+- [Jobs Documentation](https://huggingface.co/docs/huggingface_hub/guides/cli#hf-jobs)
+
+---
+
 ## Deployment
 
 Vercel is recommended for the current Next.js implementation.
@@ -374,6 +406,13 @@ Then embed in this README, for example:
 2. Keep changes scoped and documented.
 3. Run lint/build locally before opening a PR.
 4. Include screenshots or demo clips for UI-facing changes.
+
+---
+
+
+## Hugging Face Agents
+
+Integrate advanced AI workflows and connect your coding or chat agents to the Hugging Face Hub. See [docs/agents.md](docs/agents.md) for setup, supported clients, and example workflows.
 
 ---
 
