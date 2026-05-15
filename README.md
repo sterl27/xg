@@ -414,6 +414,9 @@ Then embed in this README, for example:
 
 Integrate advanced AI workflows and connect your coding or chat agents to the Hugging Face Hub. See [docs/agents.md](docs/agents.md) for setup, supported clients, and example workflows.
 
+- Skills guide: [docs/agents-skills.md](docs/agents-skills.md)
+- CLI guide: [docs/huggingface-cli.md](docs/huggingface-cli.md)
+
 ---
 
 ## License

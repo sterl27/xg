@@ -337,7 +337,8 @@ export default function Alic3XCassetteProducerUI() {
     if (added.length) {
       setTracks(prev => [...added, ...prev]);
       setCurrentIndex(0);
-      setIsPlaying(true);
+      // Do not auto-play on upload
+      // setIsPlaying(true);
     }
   }, []);
 

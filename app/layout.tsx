@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -13,7 +15,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={cn("font-sans", geist.variable)}>
-      <body className="min-h-screen bg-[#0a0c0f] font-mono antialiased">{children}</body>
+      <body className="min-h-screen bg-[#0a0c0f] font-mono antialiased">
+        {children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
